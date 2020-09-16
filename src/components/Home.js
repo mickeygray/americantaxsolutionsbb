@@ -502,10 +502,13 @@ const Home = () => {
   return (
     <div>
       <h1 className='text-danger all-center'>
-        AMERICAN TAX SOLUTIONS BETTER BUSINESS BUREAU
+        TERRY SELB IS A DISBARRED ATTORNEY AND A THIEF
       </h1>
       <h2 className='text-danger all-center'>
-        AMERICAN TAX SOLUTIONS IS A SCAM
+        REPORT TERRY SELB TO THE BETTER BUSINESS BUREAU
+      </h2>
+      <h2 className='text-danger all-center'>
+        HIS COMPANY AMERICAN TAX SOLUTIONS IS A SCAM
       </h2>
       <h3 className='text-danger all-center'>
         AMERICAN TAX SOLUTIONS USES A MENTAL INVALID WHO HE CONTROLS THROUGH A
