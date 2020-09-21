@@ -547,8 +547,7 @@ const Home = () => {
         style={{
           width: "100%",
           height: "75vh",
-          position: "absolute",
-          top: "10",
+
           zIndex: "-1",
         }}
       />
