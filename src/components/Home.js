@@ -517,7 +517,7 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className='container'>
       <h1 className='text-danger all-center'>
         TERRY SELB IS A DISBARRED ATTORNEY AND A THIEF
       </h1>
