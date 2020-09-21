@@ -558,22 +558,13 @@ const Home = () => {
           defrauded hundreds of people with deceptive advertising and illicit
           money management.
         </h5>
-        <br />
-        <br />
-
-        <br />
-        <br />
-        <p className='lead text-danger'>
-          "I don’t know but profits have been so good that Terry now has a
-          Maybach and a driver." <br /> Chris Baker
-        </p>
       </div>
 
       <div className='container'>
+        <p className='text-danger lead'>
+          This is the worst of the letters sent by American Tax Solutions
+        </p>
         <div className='grid-2'>
-          <p className='text-danger lead'>
-            This is the worst of the letters sent by American Tax Solutions
-          </p>
           <div>
             <h5>Terry Selb American Tax Solutions</h5>
             <img src={criminal} alt='Terry Selb American Tax Solutions' />
