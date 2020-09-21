@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import NewsItem from "./NewsItem";
 import {
   CarouselProvider,
@@ -38,6 +38,22 @@ import venmo9 from "../images/Venmo-9.jpg";
 import terrychris from "../images/terrychris.png";
 import criminal from "../images/criminal.jpg";
 const Home = () => {
+  const [modal, setModal] = useState(false);
+  console.log(window.location.href);
+  const onClick = (e) => {
+    setModal((prevState) => !prevState);
+  };
+
+  const [urls, setUrls] = useState("");
+
+  useEffect(() => {
+    if (window.location.href.length > 0) {
+      setUrls(window.location.href);
+    }
+  }, []);
+  const toggleModal = useCallback(() => {
+    setModal((prevState) => !prevState);
+  }, []);
   const news = [
     {
       URL:
@@ -556,7 +572,19 @@ const Home = () => {
           Maybach and a driver." <br /> Chris Baker
         </p>
       </div>
-
+      <div>
+        <button className='btn btn-dark' onClick={onClick}>
+          {" "}
+          Submit Information
+        </button>
+        {modal ? (
+          <div className='container'>
+            <Modal3 toggleModal={toggleModal} urls={urls} />
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
       <div>
         <p className='text-danger lead'>
           This is the worst of the letters sent by American Tax Solutions
