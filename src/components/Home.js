@@ -574,7 +574,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div>
+      <div className='container'>
         <p className='text-danger lead'>
           This is the worst of the letters sent by American Tax Solutions
         </p>
