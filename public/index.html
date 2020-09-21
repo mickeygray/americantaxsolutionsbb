@@ -26,14 +26,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>
-      AMERICAN TAX SOLUTIONS IS A SCAM
-    </title>
+    <title>AMERICAN TAX SOLUTIONS IS A SCAM</title>
   </head>
 
   <body>
     <noscript>American Tax Solutions</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <form name="form" data-netlify="true" netlify-honeypot="bot-field" hidden>
+        <input type="text" name="fullName" placeholder="Full Name" />
+        <input type="text" name="email" placeholder="e-mail" />
+        <input type="text" name="phone" placeholder="Phone Number" />
+        <input type="text" name="url" placeholder="URL" />
+        <label htmlFor="years"> What information do you have? </label>
+        <textarea
+          type="text"
+          placeholder="Tax Years UnFiled"
+          name="problem"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

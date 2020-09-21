@@ -573,7 +573,12 @@ const Home = () => {
           Maybach and a driver." <br /> Chris Baker
         </p>
       </div>
-      <div>
+      <div className='all-center'>
+        <p>
+          If you or a loved one has been harmed by Terry Selb or American Tax
+          Solutions please let us know. We will report it to the authorities.
+        </p>
+
         <button className='btn btn-dark' onClick={onClick}>
           {" "}
           Submit Information
