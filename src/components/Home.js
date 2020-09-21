@@ -715,7 +715,7 @@ const Home = () => {
         </CarouselProvider>
       </div>
 
-      <div className='my-3'>
+      <div>
         <h5>This is full text versions of the some of the mailers</h5>
         <CarouselProvider
           naturalSlideWidth={100}
