@@ -837,30 +837,29 @@ const Home = () => {
         </CarouselProvider>
       </div>
 
-      <div className='all-center'>
-        <p>
-          If you or a loved one has been harmed by Terry Selb or American Tax
-          Solutions please let us know. We will report it to the authorities.
-        </p>
-
-        <button className='btn btn-dark' onClick={onClick}>
-          {" "}
-          Submit Information
-        </button>
-        {modal ? (
-          <div className='container'>
-            <Modal3 toggleModal={toggleModal} urls={urls} />
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
       <div className='grid-2' style={{ maxHeight: "50%" }}>
         <h3>AMERICAN TAX SOLUTIONS HEADLINES</h3>
         {news.map((newa) => (
           <NewsItem key={newa.URL} newa={newa} />
         ))}
       </div>
+
+      <p>
+        If you or a loved one has been harmed by Terry Selb or American Tax
+        Solutions please let us know. We will report it to the authorities.
+      </p>
+
+      <button className='btn btn-dark' onClick={onClick}>
+        {" "}
+        Submit Information
+      </button>
+      {modal ? (
+        <div className='container'>
+          <Modal3 toggleModal={toggleModal} urls={urls} />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
