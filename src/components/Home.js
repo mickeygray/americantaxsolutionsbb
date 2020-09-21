@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import NewsItem from "./NewsItem";
+import Modal3 from "./Modal3";
 import {
   CarouselProvider,
   Slider,
