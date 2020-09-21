@@ -573,24 +573,7 @@ const Home = () => {
           Maybach and a driver." <br /> Chris Baker
         </p>
       </div>
-      <div className='all-center'>
-        <p>
-          If you or a loved one has been harmed by Terry Selb or American Tax
-          Solutions please let us know. We will report it to the authorities.
-        </p>
 
-        <button className='btn btn-dark' onClick={onClick}>
-          {" "}
-          Submit Information
-        </button>
-        {modal ? (
-          <div className='container'>
-            <Modal3 toggleModal={toggleModal} urls={urls} />
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
       <div>
         <p className='text-danger lead'>
           This is the worst of the letters sent by American Tax Solutions
@@ -852,6 +835,25 @@ const Home = () => {
             </Slide>
           </Slider>
         </CarouselProvider>
+      </div>
+
+      <div className='all-center'>
+        <p>
+          If you or a loved one has been harmed by Terry Selb or American Tax
+          Solutions please let us know. We will report it to the authorities.
+        </p>
+
+        <button className='btn btn-dark' onClick={onClick}>
+          {" "}
+          Submit Information
+        </button>
+        {modal ? (
+          <div className='container'>
+            <Modal3 toggleModal={toggleModal} urls={urls} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className='grid-2' style={{ maxHeight: "50%" }}>
         <h3>AMERICAN TAX SOLUTIONS HEADLINES</h3>
