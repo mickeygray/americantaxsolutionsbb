@@ -545,7 +545,7 @@ const Home = () => {
         alt='american tax solutions'
         src={hero}
         style={{
-          width: "100vw",
+          width: "100%",
           height: "75vh",
           position: "absolute",
           top: "10",
